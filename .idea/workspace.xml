@@ -5,18 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58f04d99-a16f-4c0a-9942-3b48343e6722" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/models/face_recognition.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/initial_dataset.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/face_model.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/train_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/cnn_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/knn_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/knn_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/knn_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routes/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/users.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/schemas/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/schemas/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/face_recognition.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/storage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/utils/image_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/image_processing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/extract_embeddings.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/extract_embeddings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/face_model.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/user_1.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/user_10.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/user_11.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/user_12.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/user_13.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/user_14.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/user_15.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/user_2.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/user_3.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/user_4.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/user_5.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/user_6.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/user_7.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/user_8.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_data/user_9.npy" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,33 +57,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;FastAPI.FaceDetectorAPI.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.initial_dataset.executor&quot;: &quot;Run&quot;,
-    &quot;Python.initial_train.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/bryan/OneDrive/Desktop/FaceDetectorAPI&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "FastAPI.FaceDetectorAPI.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.initial_dataset.executor": "Run",
+    "Python.initial_train.executor": "Run",
+    "Python.train_model.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "develop",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/bryan/OneDrive/Desktop/FaceDetectorAPI",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\bryan\OneDrive\Desktop\FaceDetectorAPI" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\bryan\OneDrive\Desktop\FaceDetectorAPI\app\utils" />
       <recent name="C:\Users\bryan\OneDrive\Desktop\FaceDetectorAPI\app\models" />
       <recent name="C:\Users\bryan\OneDrive\Desktop\FaceDetectorAPI" />
       <recent name="C:\Users\bryan\OneDrive\Desktop\FaceDetectorAPI\app\routes" />
@@ -104,6 +116,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="train_model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="FaceDetectorAPI" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app/models" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/models/train_model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="FaceDetectorAPI" type="Python.FastAPI">
       <option name="appName" value="FaceDetectorAPI" />
       <option name="file" value="$PROJECT_DIR$/main.py" />
@@ -123,6 +158,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.train_model" />
         <item itemvalue="Python.initial_dataset" />
       </list>
     </recent_temporary>
@@ -152,7 +188,7 @@
       <workItem from="1750304535352" duration="1551000" />
       <workItem from="1750310315285" duration="2881000" />
       <workItem from="1750383748367" duration="28727000" />
-      <workItem from="1750472795280" duration="5223000" />
+      <workItem from="1750472795280" duration="18897000" />
     </task>
     <servers />
   </component>
@@ -160,8 +196,9 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/FaceDetectorAPI$FaceDetectorAPI.coverage" NAME="FaceDetectorAPI Coverage Results" MODIFIED="1750428802302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/FaceDetectorAPI$initial_dataset.coverage" NAME="initial_dataset Coverage Results" MODIFIED="1750407963875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/models" />
+    <SUITE FILE_PATH="coverage/FaceDetectorAPI$FaceDetectorAPI.coverage" NAME="FaceDetectorAPI Coverage Results" MODIFIED="1750510549571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/FaceDetectorAPI$train_model.coverage" NAME="train_model Coverage Results" MODIFIED="1750510268189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/models" />
+    <SUITE FILE_PATH="coverage/FaceDetectorAPI$initial_dataset.coverage" NAME="initial_dataset Coverage Results" MODIFIED="1750499197893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/models" />
     <SUITE FILE_PATH="coverage/FaceDetectorAPI$initial_train.coverage" NAME="initial_train Coverage Results" MODIFIED="1750429379892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/models" />
   </component>
 </project>
