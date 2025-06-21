@@ -3,6 +3,7 @@ import os
 from typing import Optional
 import numpy as np
 from joblib import dump, load
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, classification_report
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.preprocessing import LabelEncoder
 from app.services.db import get_all_users_with_embeddings
@@ -62,7 +63,6 @@ class FaceKNNModel:
 
             X_train = []
             y_train = []
-
             for user in users:
                 user_id = user['id']
                 kp_url = user['KP']
@@ -70,7 +70,6 @@ class FaceKNNModel:
                     temp_file_path = await download_file_from_r2(kp_url, os.getenv('BUCKET_KPS'))
                     with open(temp_file_path, 'r') as f:
                         stored_embedding = json.load(f)
-                    # Usar dtype=np.float64 para mantener la máxima precisión
                     stored_embedding_array = np.array(stored_embedding['embedding'], dtype=np.float64)
                     X_train.append(stored_embedding_array)
                     y_train.append(user_id)
@@ -83,18 +82,21 @@ class FaceKNNModel:
                 self.is_trained = False
                 return
 
-            # TERCERO: Debug y entrenamiento (FUERA del ciclo)
-            print(f"DEBUG: y_train antes de encoding: {y_train}")
-            y_train_encoded = self.label_encoder.fit_transform(y_train)
-            print(f"DEBUG: y_train después de encoding: {y_train_encoded}")
-            for original, encoded in zip(y_train, y_train_encoded):
-                print(f"DEBUG: User ID {original} -> Label {encoded}")
-
             X_train = np.array(X_train, dtype=np.float64)
+            y_train_encoded = self.label_encoder.fit_transform(y_train)
             self.knn.fit(X_train, y_train_encoded)
             self.is_trained = True
             self.save_model()
 
+            # Calcular métricas de entrenamiento
+            y_pred = self.knn.predict(X_train)
+            acc = accuracy_score(y_train_encoded, y_pred)
+            prec = precision_score(y_train_encoded, y_pred, average='macro', zero_division=0)
+            rec = recall_score(y_train_encoded, y_pred, average='macro', zero_division=0)
+            f1 = f1_score(y_train_encoded, y_pred, average='macro', zero_division=0)
+            print(f"Entrenamiento KNN - Accuracy: {acc:.4f}, Precision: {prec:.4f}, Recall: {rec:.4f}, F1: {f1:.4f}")
+            print("Reporte de clasificación:")
+            print(classification_report(y_train_encoded, y_pred, zero_division=0))
         except Exception as e:
             print(f"Error al entrenar el modelo: {str(e)}")
             self.is_trained = False

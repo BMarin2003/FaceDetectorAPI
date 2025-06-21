@@ -5,28 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58f04d99-a16f-4c0a-9942-3b48343e6722" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/train_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/knn_model.jobl" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/knn_model.jobl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/knn_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/knn_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routes/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/users.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/utils/extract_embeddings.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/extract_embeddings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/face_model.h5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/training_data/user_1.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/training_data/user_10.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/training_data/user_11.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/training_data/user_12.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/training_data/user_13.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/training_data/user_14.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/training_data/user_15.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/training_data/user_2.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/training_data/user_3.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/training_data/user_4.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/training_data/user_5.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/training_data/user_6.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/training_data/user_7.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/training_data/user_8.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/training_data/user_9.npy" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +170,7 @@
       <workItem from="1750304535352" duration="1551000" />
       <workItem from="1750310315285" duration="2881000" />
       <workItem from="1750383748367" duration="28727000" />
-      <workItem from="1750472795280" duration="18897000" />
+      <workItem from="1750472795280" duration="20627000" />
     </task>
     <servers />
   </component>
@@ -196,7 +178,7 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/FaceDetectorAPI$FaceDetectorAPI.coverage" NAME="FaceDetectorAPI Coverage Results" MODIFIED="1750510549571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/FaceDetectorAPI$FaceDetectorAPI.coverage" NAME="FaceDetectorAPI Coverage Results" MODIFIED="1750511397726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/FaceDetectorAPI$train_model.coverage" NAME="train_model Coverage Results" MODIFIED="1750510268189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/models" />
     <SUITE FILE_PATH="coverage/FaceDetectorAPI$initial_dataset.coverage" NAME="initial_dataset Coverage Results" MODIFIED="1750499197893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/models" />
     <SUITE FILE_PATH="coverage/FaceDetectorAPI$initial_train.coverage" NAME="initial_train Coverage Results" MODIFIED="1750429379892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/models" />
