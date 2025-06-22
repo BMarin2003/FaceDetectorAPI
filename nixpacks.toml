@@ -1,12 +1,2 @@
 [phases.setup]
-nixPkgs = [
-    "pkgs.libglvnd",
-    "pkgs.zlib",
-    "pkgs.python3",
-    "pkgs.libGL",
-    "pkgs.libX11",
-    "pkgs.libXext",
-    "pkgs.libXrender",
-    "pkgs.libXrandr",
-    "pkgs.mesa"
-]
+nixPkgs = ["libGL", "libX11", "libXext", "libXrender", "libXrandr", "libglvnd", "mesa", "python3", "zlib"]
