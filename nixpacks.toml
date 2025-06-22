@@ -1,2 +1,2 @@
 [phases.setup]
-nixPkgs = ["pkgs.libglvnd", "pkgs.zlib"]
+nixPkgs = ["pkgs.libglvnd", "pkgs.zlib", "pkgs.python3"]

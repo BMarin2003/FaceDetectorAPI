@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58f04d99-a16f-4c0a-9942-3b48343e6722" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/nixpacks.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nixpacks.toml" beforeDir="false" afterPath="$PROJECT_DIR$/nixpacks.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +187,7 @@
       <workItem from="1750310315285" duration="2881000" />
       <workItem from="1750383748367" duration="28727000" />
       <workItem from="1750472795280" duration="27671000" />
-      <workItem from="1750583717394" duration="9918000" />
+      <workItem from="1750583717394" duration="10113000" />
     </task>
     <servers />
   </component>
