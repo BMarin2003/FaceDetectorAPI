@@ -4,7 +4,7 @@ fastapi
 scikit-image
 joblib
 scikit-learn
-pydantic
+pydantic[email]
 httpx
 python-dotenv
 boto3
