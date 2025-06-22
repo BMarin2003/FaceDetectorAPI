@@ -1,2 +1,10 @@
+opencv-python
+numpy
 fastapi
-uvicorn
+scikit-image
+joblib
+scikit-learn
+pydantic
+httpx
+python-dotenv
+boto3
