@@ -12,13 +12,17 @@ from app.schemas.user import UserInDB
 from app.services import db, storage
 from app.utils.extract_embeddings import extract_embedding_from_image
 
-app = FastAPI()
 router = APIRouter()
+
+
 
 # Instanciar el modelo KNN
 knn_model = FaceKNNModel()
 print(f"Modelo KNN inicializado correctamente")
 
+@router.get("/")
+async def read_root():
+    return {"message": "Bienvenido a la API de FaceDetector"}
 
 async def initialize_model():
     if not knn_model.is_trained:
@@ -28,11 +32,9 @@ async def initialize_model():
     else:
         print("Modelo KNN ya estaba entrenado")
 
-
-@app.on_event("startup")
+@router.on_event("startup")
 async def startup_event():
     await initialize_model()
-
 
 @router.post("/users/", response_model=dict)
 async def create_user(
@@ -190,7 +192,7 @@ async def update_user(
         await db.add_face_photo(user_id, foto_url, kp_url)
         await knn_model.train_model()
 
-    result = await db.update_user(user_id, update_data)
+    await db.update_user(user_id, update_data)
     return {"message": "Usuario actualizado exitosamente"}
 
 
