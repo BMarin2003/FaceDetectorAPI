@@ -3,17 +3,5 @@ nixPkgs = [
   "mesa",
   "zlib",
   "python3",
-  "xorg.libX11",
-  "xorg.libXext",
-  "xorg.libXrender",
-  "xorg.libXrandr",
-  "libglvnd",
-  "mesa_drivers",
-  "libGL",
-  "libGLU",
-  "libglut",
-  "libXinerama",
-  "libXcursor",
-  "libXfixes",
-  "libXi"
+  "xorg.libX11"
 ]
