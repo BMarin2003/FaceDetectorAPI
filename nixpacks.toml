@@ -1,7 +1,0 @@
-[phases.setup]
-nixPkgs = [
-  "mesa",
-  "zlib",
-  "python3",
-  "xorg.libX11"
-]

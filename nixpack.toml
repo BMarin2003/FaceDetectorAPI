@@ -1,0 +1,38 @@
+[phases.setup]
+nixPkgs = [
+  "python39",
+  "python39Packages.pip",
+  "mesa",
+  "zlib",
+  "xorg.libX11",
+  "xorg.libXext",
+  "xorg.libXrender",
+  "xorg.libXrandr",
+  "libglvnd",
+  "mesa_drivers",
+  "libGL",
+  "libGLU",
+  "libglut",
+  "xorg.libXinerama",
+  "xorg.libXcursor",
+  "xorg.libXfixes",
+  "xorg.libXi"
+]
+
+[phases.install]
+cmds = [
+  'python3.9 -m venv venv',
+  '. venv/bin/activate',
+  'pip install --upgrade pip setuptools wheel',
+  'pip install --no-cache-dir -r requirements.txt'
+]
+
+[phases.build]
+cmds = [
+  'mkdir -p storage/images storage/temp storage/models storage/embeddings storage/logs',
+  'chmod -R 755 storage/',
+  'ls -la storage/ || echo "Storage directory check"'
+]
+
+[start]
+cmd = '. venv/bin/activate && uvicorn main:app --host 0.0.0.0 --port $PORT'
