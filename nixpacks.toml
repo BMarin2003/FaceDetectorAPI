@@ -1,2 +1,11 @@
 [phases.setup]
-nixPkgs = ["libGL", "libX11", "libXext", "libXrender", "libXrandr", "libglvnd", "mesa", "python3", "zlib"]
+nixPkgs = [
+  "mesa",
+  "zlib",
+  "python3",
+  "xorg.libX11",
+  "xorg.libXext",
+  "xorg.libXrender",
+  "xorg.libXrandr",
+  "libglvnd"
+]
