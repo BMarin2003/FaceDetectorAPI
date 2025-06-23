@@ -7,6 +7,7 @@
     <list default="true" id="58f04d99-a16f-4c0a-9942-3b48343e6722" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nixpacks.toml" beforeDir="false" afterPath="$PROJECT_DIR$/nixpacks.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +190,7 @@
       <workItem from="1750383748367" duration="28727000" />
       <workItem from="1750472795280" duration="27671000" />
       <workItem from="1750583717394" duration="13363000" />
-      <workItem from="1750647747313" duration="367000" />
+      <workItem from="1750647747313" duration="1103000" />
     </task>
     <servers />
   </component>
